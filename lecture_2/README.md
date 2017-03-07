@@ -31,4 +31,5 @@ Lecture 2 gives an overview of React, a library for writing declarative UI compo
 * How to specify event handlers on native HTML elements?
 * What are callback functions, how to pass them from parent to children?
 * What is function context? How to bind a function to a context?
-* How to compose React components?
+
+[User input in React](./src/user_input_example/README.md)
