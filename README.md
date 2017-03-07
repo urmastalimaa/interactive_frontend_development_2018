@@ -23,3 +23,4 @@ and test a medium-sized JavaScript application on their own.
 
 ## Lectures
 * [Lecture 1 - Introduction to the JavaScript ecosystem](./lecture_1/README.md)
+* [Lecture 2 - Introduction to React](./lecture_2/README.md)

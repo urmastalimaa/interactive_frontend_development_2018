@@ -4,10 +4,16 @@ Lecture 2 gives an overview of React, a library for writing declarative UI compo
 
 ## Study goals
 
-* How to create new JavaScript objects and arrays without mutating existing ones
-* How to align and order elements using flexbox
+## React introduction
+
 * What dependencies does React have?
 * How does React integrate with other tools (babel/eslint)?
+* How do React component compose?
+
+[Introduction to React](./src/props_example/README.md)
+
+## State in React
+
 * What are _props_ and _state_ in React?
 * What is React component lifecycle (basic level), when is render called?
 * What are class components and pure function components, when to use which?
