@@ -20,5 +20,11 @@ Lecture 3 describes how to build and test React applications.
 
 [Presentational and container components](./src/presentational_container/README.md)
 
+## Testing
+
 * How to test React components?
 * How to debug tests that run in NodeJS?
+
+[Testing React components](./test/README.md)
+
+[_Back_](../README.md)

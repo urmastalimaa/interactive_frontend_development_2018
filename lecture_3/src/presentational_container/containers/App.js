@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 import AppHeader from '../components/AppHeader';
 import CommentList from '../components/CommentList';
@@ -9,11 +10,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      lastCommentId: 2,
-      comments: [
-        {author: 'React Reactson', text: 'This is one comment', id: 1},
-        {author: 'Java Scriptson', text: 'This is another comment', id: 2}
-      ]
+      lastCommentId: 0,
+      comments: []
     };
     this.addComment = this.addComment.bind(this);
   }
@@ -37,7 +35,9 @@ class App extends Component {
           ref={(form) => this.controlledForm = form }
           onSubmit={(comment) => {
             this.addComment(comment);
-            this.controlledForm.focus();
+            if (this.props.focusForms) {
+              this.controlledForm.focus();
+            }
           }}
           text='Submit comment'
         />
@@ -45,7 +45,9 @@ class App extends Component {
           ref={(form) => this.uncontrolledForm = form }
           onSubmit={(comment) => {
             this.addComment(comment);
-            this.uncontrolledForm.focus();
+            if (this.props.focusForms) {
+              this.uncontrolledForm.focus();
+            }
           }}
           text='Submit comment'
         />
@@ -54,5 +56,13 @@ class App extends Component {
     );
   }
 }
+
+App.propTypes = {
+  focusForms: PropTypes.bool.isRequired
+};
+
+App.defaultProps = {
+  focusForms: true
+};
 
 export default App;
