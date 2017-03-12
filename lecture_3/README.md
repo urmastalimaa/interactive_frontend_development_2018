@@ -4,7 +4,14 @@ Lecture 3 describes how to build and test React applications.
 
 ## Study goals
 
+## Debugging
+
 * How to use `debugger` keyword or breakpoints in browser?
+
+[Debugging](./src/debugging/README.md)
+
+## Presentational and container components
+
 * What are presentational components and when to use them?
 * What are container components and when to use them?
 * What are controlled forms and when to use them?
