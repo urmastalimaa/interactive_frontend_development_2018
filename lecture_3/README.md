@@ -10,5 +10,8 @@ Lecture 3 describes how to build and test React applications.
 * What are controlled forms and when to use them?
 * What are uncontrolled forms and when to use them?
 * How to implement higher-order components?
+
+[Presentational and container components](./src/presentational_container/README.md)
+
 * How to test React components?
 * How to debug tests that run in NodeJS?
