@@ -14,8 +14,12 @@ The examples borrow heavily from [Redux official guides](http://redux.js.org/).
 
 [Redux introduction](./src/redux_introduction/README.md)
 
+## Redux basics
+
 * Why is it good to have all application state in one object?
-* How to pass state and callbacks to React components without having it all in the root React component.
+
+[Redux basics](./src/redux_basics/README.md)
+
 * Flux / Elm / Redux application architecture
 * Actions, reducers
 * Reducer composition
