@@ -22,6 +22,7 @@
     "eslint-config-google": "^0.9.1",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-react-redux": "^2.1.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "mocha": "^5.0.1",
     "sinon": "^4.4.2",

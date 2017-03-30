@@ -11,15 +11,22 @@ The examples borrow heavily from [Redux official guides](http://redux.js.org/).
 
 * What is state? What is a value?
 * What are flux actions?
+* Why is it good to have all application state in one object?
 
 [Redux introduction](./src/redux_introduction/README.md)
 
 ## Redux basics
 
-* Why is it good to have all application state in one object?
+* Flux / Elm / Redux application architecture
+* Actions, reducers
 
 [Redux basics](./src/redux_basics/README.md)
 
-* Flux / Elm / Redux application architecture
-* Actions, reducers
+## Reducer composition
+
+* How to pass state and callbacks to React components without having it all in the root React component.
 * Reducer composition
+
+[Reducer composition](./src/redux_combine_reducers/README.md)
+
+[_Back_](../README.md)

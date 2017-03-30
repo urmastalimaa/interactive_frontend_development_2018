@@ -8,10 +8,15 @@
   "env": {
     "browser": true
   },
-  "plugins": ["react", "import"],
+  "plugins": [
+    "react",
+    "react-redux",
+    "import"
+  ],
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:react-redux/recommended",
     "google",
     "plugin:import/errors",
     "plugin:import/warnings"
@@ -19,6 +24,7 @@
   rules: {
     "max-len": ["error", 120],
     "require-jsdoc": "off",
-    "comma-dangle": "off"
+    "comma-dangle": "off",
+    "react-redux/prefer-separate-component-file": "off"
   }
 }
