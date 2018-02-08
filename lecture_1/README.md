@@ -12,11 +12,18 @@ homeworks.
 It is not necessary to understand all lecture 1 concepts in depth immediately.
 If something creates confusion later, lecture 1 can be revisited.
 
+## Building
 * Where and using what can JavaScript libraries be downloaded? How can they be used in your application?
 * When are JavaScript files loaded and executed?
 * How to package different JavaScript files into one application?
 * What is ECMAScript, ES2015, ES5 etc? Where and how can it be used?
 * What is transpilation? How does it differ from compilation?
+* What are source maps?
+
+[./building.md][Building with NPM, Yarn, Webpack, Babel]
+
+[./webpack.md][NPM, Yarn, Webpack, Babel]
+
 * What automated tools are there to ensure JavaScript quality?
 * What are source maps?
 * What is CSS?

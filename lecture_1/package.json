@@ -1,0 +1,21 @@
+{
+  "name": "IDF-lecture-1",
+  "version": "1.0.0",
+  "description": "Introduction to the JavaScript ecosystem. Building, linting and testing JavaScript.",
+  "repository": "https://github.com/urmastalimaa/interactive_frontend_development_2018",
+  "author": "Urmas Talimaa",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.2"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "build:watch": "webpack --config webpack.config.js --watch",
+    "start": "webpack-dev-server --open --config webpack.config.js"
+  }
+}
