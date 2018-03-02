@@ -16,6 +16,11 @@ Lecture 2 gives an overview of React, a library for writing declarative UI compo
 
 * What are _props_ and _state_ in React?
 * What is React component lifecycle (basic level), when is render called?
+
+[State in React](./src/state_example/README.md)
+
+## Pure function components
+
 * What are class components and pure function components, when to use which?
 * How to type-check _props_?
 * How to specify event handlers on native HTML elements?

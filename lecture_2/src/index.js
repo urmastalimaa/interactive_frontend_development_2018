@@ -1,6 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import PropsApp from './PropsApp';
+import PropsApp from './props_example/App';
+import StateApp from './state_example/App';
 
-ReactDOM.render(<PropsApp />, document.getElementById('root'));
+let currentApp = <PropsApp />;
+if (document.location.search.match(/progress=state/)) {
+  currentApp = <StateApp />;
+}
+
+ReactDOM.render(currentApp, document.getElementById('root'));

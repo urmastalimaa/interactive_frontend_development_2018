@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import StaticCommentList from './StaticCommentList';
+import CommentList from './CommentList';
 import CommentForm from './CommentForm';
 
 const onSubmit = () => {
@@ -17,7 +17,7 @@ class App extends Component {
     return (
       <div className='app'>
         <h1>Comments</h1>
-        <StaticCommentList />
+        <CommentList />
         <CommentForm onSubmit={onSubmit} />
       </div>
     );
