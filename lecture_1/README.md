@@ -27,6 +27,12 @@ If something creates confusion later, lecture 1 can be revisited.
 
 [./linting.md][Linting JavaScript source code]
 
+## CSS
 * What is CSS?
+* How can CSS be partitioned to modules?
+* How to align and order elements using flexbox
+
+[./css_modules.md][CSS and CSS modules]
+
 * How to test your application?
 * How to allow others to run your application?

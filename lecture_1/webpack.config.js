@@ -1,9 +1,13 @@
 const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    'app.js': './src/index.js',
+    'app.css': './css/index.css'
+  },
   output: {
-    filename: 'app.js',
+    filename: '[name]',
     path: path.resolve(__dirname, 'public')
   },
   devtool: "inline-source-map",
@@ -12,7 +16,14 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.js/, use: 'babel-loader' }
+      { test: /\.js/, use: 'babel-loader' },
+      { test: /\.css$/, use: ExtractTextPlugin.extract('css-loader') }
     ]
-  }
+  },
+  plugins: [
+    new ExtractTextPlugin({
+      filename: 'app.css',
+      allChunks: true
+    })
+  ]
 };
