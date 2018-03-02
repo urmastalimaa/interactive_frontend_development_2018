@@ -19,7 +19,6 @@
   rules: {
     "max-len": ["error", 120],
     "require-jsdoc": "off",
-    "comma-dangle": "off",
-    "react/prop-types": "off"
+    "comma-dangle": "off"
   }
 }

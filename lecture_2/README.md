@@ -23,6 +23,11 @@ Lecture 2 gives an overview of React, a library for writing declarative UI compo
 
 * What are class components and pure function components, when to use which?
 * How to type-check _props_?
+
+[Pure function components in React](./src/pure_function_example/README.md)
+
+## User input
+
 * How to specify event handlers on native HTML elements?
 * What are callback functions, how to pass them from parent to children?
 * What is function context? How to bind a function to a context?
