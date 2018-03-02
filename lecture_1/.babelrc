@@ -6,5 +6,6 @@
         "browsers": ["last 5 Chrome versions", "last 5 Firefox versions", "IE 10"]
       }
     }]
-  ]
+  ],
+  "plugins": ["transform-object-rest-spread"]
 }

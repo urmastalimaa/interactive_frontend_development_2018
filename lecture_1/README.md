@@ -34,5 +34,8 @@ If something creates confusion later, lecture 1 can be revisited.
 
 [./css_modules.md][CSS and CSS modules]
 
+## Testing
 * How to test your application?
-* How to allow others to run your application?
+* How to create new JavaScript objects and arrays without mutating existing ones
+
+[./unit_tests.md][CSS and CSS modules]
