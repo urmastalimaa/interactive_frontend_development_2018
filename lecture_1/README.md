@@ -22,10 +22,11 @@ If something creates confusion later, lecture 1 can be revisited.
 
 [./building.md][Building with NPM, Yarn, Webpack, Babel]
 
-[./webpack.md][NPM, Yarn, Webpack, Babel]
-
+## Linting
 * What automated tools are there to ensure JavaScript quality?
-* What are source maps?
+
+[./linting.md][Linting JavaScript source code]
+
 * What is CSS?
 * How to test your application?
 * How to allow others to run your application?

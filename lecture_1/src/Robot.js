@@ -1,6 +1,6 @@
 class Robot {
   beep() {
-    console.log('I\'m a robot');
+    console.log('I\'m a robot'); // eslint-disable-line no-console
   }
 }
 
