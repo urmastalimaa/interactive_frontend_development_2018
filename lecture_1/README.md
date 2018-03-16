@@ -20,22 +20,22 @@ If something creates confusion later, lecture 1 can be revisited.
 * What is transpilation? How does it differ from compilation?
 * What are source maps?
 
-[./building.md][Building with NPM, Yarn, Webpack, Babel]
+[Building with NPM, Yarn, Webpack, Babel](./building.md)
 
 ## Linting
 * What automated tools are there to ensure JavaScript quality?
 
-[./linting.md][Linting JavaScript source code]
+[Linting JavaScript source code](./linting.md)
 
 ## CSS
 * What is CSS?
 * How can CSS be partitioned to modules?
 * How to align and order elements using flexbox
 
-[./css_modules.md][CSS and CSS modules]
+[CSS and CSS modules](./css_modules.md)
 
 ## Testing
 * How to test your application?
 * How to create new JavaScript objects and arrays without mutating existing ones
 
-[./unit_tests.md][CSS and CSS modules]
+[Unit tests](./unit_tests.md)
