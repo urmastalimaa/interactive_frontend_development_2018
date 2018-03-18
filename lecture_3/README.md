@@ -16,7 +16,6 @@ Lecture 3 describes how to build and test React applications.
 * What are container components and when to use them?
 * What are controlled forms and when to use them?
 * What are uncontrolled forms and when to use them?
-* How to implement higher-order components?
 
 [Presentational and container components](./src/presentational_container/README.md)
 
@@ -27,4 +26,10 @@ Lecture 3 describes how to build and test React applications.
 
 [Testing React components](./test/README.md)
 
+## Higher order components
+
+[React documentation on higher order components][0]
+
 [_Back_](../README.md)
+
+[0]: https://reactjs.org/docs/higher-order-components.html
