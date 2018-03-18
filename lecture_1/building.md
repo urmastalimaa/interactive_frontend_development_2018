@@ -22,7 +22,7 @@ yarn install
 ```
 Installs all the dependencies that are listed in package.json. The
 dependencies usually target the NPM repository, but can target a public VCS
-repository (e.g GitHub). The `npm` dependency installation and installation
+repository (e.g GitHub). The `npm` dependency management and installation
 tool can also be used, but `yarn` has mostly superceded it by much faster and
 having saner defaults.
 
