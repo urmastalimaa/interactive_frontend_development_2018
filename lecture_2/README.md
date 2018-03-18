@@ -34,4 +34,4 @@ Lecture 2 gives an overview of React, a library for writing declarative UI compo
 
 [User input in React](./src/user_input_example/README.md)
 
-[_Back_](../../README.md)
+[_Back_](../README.md)
