@@ -20,3 +20,6 @@ The library is declarative and very simple.
 At the end of the course, students should feel comfortable about working with
 JavaScript front-end projects in teams of any size. Students are able to build
 and test a medium-sized JavaScript application on their own.
+
+## Lectures
+* [Lecture 1 - Introduction to the JavaScript ecosystem](./lecture_1/README.md)
