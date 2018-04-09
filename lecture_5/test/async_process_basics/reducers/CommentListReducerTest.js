@@ -46,20 +46,20 @@ describe('CommentListReducer', () => {
 
   it('adds in-flight comment when comment post requested', () => {
     const comment = {author: 'author', text: 'text'};
-    expect(
-      reducer(undefined, postCommentRequested({...comment, localId: 'localId'}))
-    ).to.eql({
-      comments: [{...comment, id: 'localId', inFlight: true}],
+    const requestAction = postCommentRequested(comment);
+    expect(reducer(undefined, requestAction)).to.eql({
+      comments: [{...comment, id: requestAction.payload.localId, inFlight: true}],
       fetchState: {inFlight: false}
     });
   });
 
   it('sets comment as not in flight when post succeeds', () => {
     const comment = {author: 'author', text: 'text'};
-    const initialState =
-      reducer(undefined, postCommentRequested({...comment, localId: 'localId'}));
+    const requestAction = postCommentRequested(comment);
+    const localId = requestAction.payload.localId;
+    const initialState = reducer(undefined, requestAction);
     expect(
-      reducer(initialState, postCommentSucceeded({id: 'id', localId: 'localId'}))
+      reducer(initialState, postCommentSucceeded({id: 'id', localId}))
     ).to.eql({
       comments: [{...comment, id: 'id', inFlight: false}],
       fetchState: {inFlight: false}
@@ -68,10 +68,11 @@ describe('CommentListReducer', () => {
 
   it('removes comment when post fails', () => {
     const comment = {author: 'author', text: 'text'};
-    const initialState =
-      reducer(undefined, postCommentRequested({...comment, localId: 'localId'}));
+    const requestAction = postCommentRequested(comment);
+    const localId = requestAction.payload.localId;
+    const initialState = reducer(undefined, requestAction);
     expect(
-      reducer(initialState, postCommentFailed({localId: 'localId', error: 'error'}))
+      reducer(initialState, postCommentFailed({localId, error: 'error'}))
     ).to.eql({
       comments: [],
       fetchState: {inFlight: false}
