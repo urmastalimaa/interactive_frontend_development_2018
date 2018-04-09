@@ -26,3 +26,4 @@ and test a medium-sized JavaScript application on their own.
 * [Lecture 2 - Introduction to React](./lecture_2/README.md)
 * [Lecture 3 - Expanding on React, testing React components](./lecture_3/README.md)
 * [Lecture 4 - Introduction to Redux](./lecture_4/README.md)
+* [Lecture 5 - Asynchronous processes with Redux](./lecture_5/README.md)
