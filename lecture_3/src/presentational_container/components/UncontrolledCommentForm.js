@@ -35,14 +35,12 @@ class CommentForm extends Component {
           name="author"
           type="text"
           placeholder="Your name"
-          onChange={this.handleInputChange}
         />
         <input
           ref={(input) => this.textInput = input}
           name="text"
           type="text"
           placeholder="Say something..."
-          onChange={this.handleInputChange}
         />
         <button type='submit' onClick={this.onSubmit}>
           {props.text}
