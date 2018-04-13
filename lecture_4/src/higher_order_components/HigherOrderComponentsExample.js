@@ -8,37 +8,38 @@ export const TextComponent = (props) =>
 TextComponent.propTypes = {text: PropTypes.string};
 
 export const ButtonComponent = (props) =>
-  <button>{props.text}</button>;
+  <button>{props.buttonText}</button>;
 
-ButtonComponent.propTypes = {text: PropTypes.string};
+ButtonComponent.propTypes = {buttonText: PropTypes.string};
 
 // headerWrapper is a function that accepts a React component as input.
-// Returns a function that accepts props like a normal pure function React
-// component (i.e returns a pure-function React component!).
+// Returns a React Component with a specific <h1> around it.
+// Allows wrapping arbitrary Components with a header.
 //
 // Such Higher-Order Components allow reuse of simpler components across
 // different concerns. Imagine Components with _loading_ state or Components
 // that needs to read something from a data-store.
-export const headerWrapper = (Component) => {
+export const headerWrapper = (Component, {headerText}) => {
   const ComponentWithHeader = (props) => (
     <div>
-      <h1>{props.headerText}</h1>
+      <h1>{headerText}</h1>
       <Component {...props} />
     </div>
   );
-  ComponentWithHeader.propTypes = {headerText: PropTypes.string};
 
   return ComponentWithHeader;
 };
 
 const App = () => {
-  const TextComponentWithHeader = headerWrapper(TextComponent);
-  const ButtonComponentWithHeader = headerWrapper(ButtonComponent);
+  // Has same interface as TextComponent, only has a <h1> around it.
+  const TextComponentWithHeader = headerWrapper(TextComponent, {headerText: 'header-text'});
+  // Has same interface as ButtonComponent, only has a <h1> around it.
+  const ButtonComponentWithHeader = headerWrapper(ButtonComponent, {headerText: 'button-text'});
 
   return (
     <div>
-      <TextComponentWithHeader headerText='header-text' text='text' />
-      <ButtonComponentWithHeader headerText='header-button' text='button-text' />
+      <TextComponentWithHeader text='text' />
+      <ButtonComponentWithHeader buttonText='button-text' />
     </div>
   );
 };
