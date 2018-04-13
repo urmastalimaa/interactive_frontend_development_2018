@@ -7,6 +7,10 @@ The examples borrow heavily from [Redux official guides](http://redux.js.org/).
 
 ## Study goals
 
+## Higher-Order React Components
+
+[Higher-Order React Components](./src/higher_order_components/README.md)
+
 ## Redux introduction
 
 * What is state? What is a value?
