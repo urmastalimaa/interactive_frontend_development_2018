@@ -19,11 +19,11 @@ export const start = () => {
   let store = createStore(
     reducer,
     composeStoreEnhancers(
-    applyMiddleware(
-      thunk,
-      commentServerMiddleware,
-      loggingMiddleware
-    )
+      applyMiddleware(
+        thunk,
+        commentServerMiddleware,
+        loggingMiddleware
+      )
     )
   );
 
