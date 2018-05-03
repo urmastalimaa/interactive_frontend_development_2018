@@ -12,7 +12,7 @@ yarn start
 ## Explanation
 
 * [WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API).
-* [Redux middleware](https://redux.js.org/docs/advanced/Middleware.html)
+* [Redux middleware](https://redux.js.org/advanced/middleware)
 
 _async_process_with_middleware_ example is continued from.
 
@@ -27,7 +27,7 @@ every 5 seconds.
 
 Browsers support WebSocket protocol natively through the `WebSocket` object.
 
-[WebSocket.js](./src/websocket_basics/WebSocket.js) defines an abstraction on
+[WebSocket.js](./WebSocket.js) defines an abstraction on
 top of the native object specific to the given server. This abstraction
 interprets incoming messages as JSON, notifies callbacks when connection status
 changes and exposes the `close` method. `parameters` can be optionally passed
@@ -35,7 +35,7 @@ which will be translated to query parameters.
 
 ### Connection management
 
-[Entrypoint JS](./src/websocket_basics/WebsocketBasicsExample.js) dispatches
+[Entrypoint JS](./WebsocketBasicsExample.js) dispatches
 actions when connecting, connected or disconnected from the WebSocket server.
 It also dispatches the `RECEIVED_PING` actions whenever a `ping` message is
 received from the WebSocket.
@@ -48,7 +48,7 @@ goes for disconnection).
 
 ### Reducers
 
-[WebSocketReducer](./src/websocket_basics/reducers/WebSocketReducer.js) simply
+[WebSocketReducer](./reducers/WebSocketReducer.js) simply
 stores the connection state and ping count.
 
 ### Components
