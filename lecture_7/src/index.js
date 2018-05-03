@@ -7,9 +7,9 @@ import {start as startRouterBasicsExample}
 import {start as startReduxSelectorCacheExample}
   from './redux-selector-cache/ReduxSelectorCacheExample';
 
-if (document.location.search.match(/progress=connected_react_router/)) {
+if (sessionStorage['progress'].match(/connected_react_router/)) {
   startConnectedReactRouterExample();
-} else if (document.location.search.match(/progress=redux_selector_cache/)) {
+} else if (sessionStorage['progress'].match(/redux_selector_cache/)) {
   startReduxSelectorCacheExample();
 } else {
   startRouterBasicsExample();
