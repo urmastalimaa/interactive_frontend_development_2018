@@ -33,7 +33,7 @@ export const postComment = ({author, text, localId}, fetch = window.fetch) => {
         );
       }
     }).catch((error) => {
-      dispatch(dispatch(postCommentFailed({localId, error: 'Service unreachable'})));
+      dispatch(postCommentFailed({localId, error: 'Service unreachable'}));
     });
   };
 };
@@ -54,7 +54,7 @@ export const getComments = (fetch = window.fetch) => {
           );
         }
       }).catch((error) => {
-        dispatch(dispatch(getCommentsFailed('Service unreachable')));
+        dispatch(getCommentsFailed('Service unreachable'));
       });
   };
 };
