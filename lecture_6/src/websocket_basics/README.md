@@ -1,4 +1,4 @@
-# Redux comment list example
+# Websocket Basics Example
 
 ## Running the application
 
