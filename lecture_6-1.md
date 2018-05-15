@@ -1,7 +1,6 @@
 # Lecture 6
 
-Lecture 6 introduces bidirectional communication with web servers and the APIs
-to achieve it.
+Lecture 6 introduces bidirectional communication with web servers and the APIs to achieve it.
 
 ## Study goals
 
@@ -11,10 +10,11 @@ to achieve it.
 * What APIs does the DOM WebSocket expose?
 * How to use a middleware to consume messages from a WebSocket connection?
 
-[Websocket basics](./src/websocket_basics/README.md)
+[Websocket basics](lecture_6/src/websocket_basics.md)
 
 ## Websocket guarantees
 
 * What message delivery guarantees do WebSockets provide?
 
-[_Back_](../README.md)
+[_Back_](./)
+

@@ -8,7 +8,7 @@ Lecture 3 describes how to build and test React applications.
 
 * How to use `debugger` keyword or breakpoints in browser?
 
-[Debugging](./src/debugging/README.md)
+[Debugging](lecture_3/src/debugging.md)
 
 ## Presentational and container components
 
@@ -17,11 +17,12 @@ Lecture 3 describes how to build and test React applications.
 * What are controlled forms and when to use them?
 * What are uncontrolled forms and when to use them?
 
-[Presentational and container components](./src/presentational_container/README.md)
+[Presentational and container components](lecture_3/src/presentational_container.md)
 
 ## Testing
 
 * How to test React components?
 * How to debug tests that run in NodeJS?
 
-[Testing React components](./test/README.md)
+[Testing React components](lecture_3/test.md)
+
